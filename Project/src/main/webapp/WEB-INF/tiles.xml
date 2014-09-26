@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+
+	<definition name="home.definition" template="/WEB-INF/views/Layout_Files/HomeLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="logo" value="/WEB-INF/views/Header_Files/Logo.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/Header_Files/Menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/Footer_Files/Footer.jsp" />
+	</definition>
+	
+	<definition name="login.definition" template="/WEB-INF/views/Layout_Files/LoginLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="logo" value="/WEB-INF/views/Header_Files/Logo.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/Header_Files/Menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/Footer_Files/Footer.jsp" />
+	</definition>
+	
+	<definition name="site1.definition" template="/WEB-INF/views/Layout_Files/SiteLayout1.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/Header_Files/Logo.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/Header_Files/MenuSite.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/Footer_Files/Footer.jsp" />
+	</definition>
+	
+	<definition name="manufacturer.definition" template="/WEB-INF/views/Layout_Files/ManufacturerLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/Header_Files/Logo.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/Header_Files/MenuManufacturer.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/Footer_Files/Footer.jsp" />
+	</definition>
+	
+	<definition name="customer.definition" template="/WEB-INF/views/Layout_Files/HomeLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="logo" value="/WEB-INF/views/Header_Files/Logo.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/Header_Files/MenuCustomer.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/Footer_Files/Footer.jsp" />
+	</definition>
+		
+	<definition name="home" extends="home.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/home.jsp" />
+	</definition>	
+		
+	<definition name="customerReg" extends="home.definition">
+		<put-attribute name="title" value="Customer Registration Form" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Customer/CustomerReg.jsp" />
+	</definition>
+	
+	<definition name="customerRegSuccess" extends="home.definition">
+		<put-attribute name="title" value="Customer Registration Successfull" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Customer/CustomerRegSuccess.jsp" />
+	</definition>	
+		
+	<definition name="manuReg1" extends="home.definition">
+		<put-attribute name="title" value="Manufacturer Registration - Description" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer_Registration/ManuReg1.jsp" />
+	</definition>
+	
+	<definition name="manuReg2" extends="home.definition">
+		<put-attribute name="title" value="Manufacturer Registration - Details" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer_Registration/ManuReg2.jsp" />
+	</definition>
+	
+	<definition name="manuRegSuccess" extends="home.definition">
+		<put-attribute name="title" value="Manufacturer Registration Successful" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer_Registration/ManuRegSuccess.jsp" />
+	</definition>
+	
+	<definition name="developer" extends="home.definition">
+		<put-attribute name="title" value="Developer Details" />
+		<put-attribute name="body" value="/WEB-INF/views/Footer_Files/Developer.jsp" />
+	</definition>
+	
+	<definition name="technologies" extends="home.definition">
+		<put-attribute name="title" value="Project Description and Technologies Used" />
+		<put-attribute name="body" value="/WEB-INF/views/Footer_Files/TechnologiesUsed.jsp" />
+	</definition>
+	
+	<definition name="loginPage" extends="login.definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Login/LoginPage.jsp" />
+	</definition>
+	
+	<definition name="loginPage1" extends="login.definition">
+		<put-attribute name="title" value="Invalid Username Or Password" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Login/LoginPage1.jsp" />
+	</definition>
+	
+	<definition name="loginPage2" extends="login.definition">
+		<put-attribute name="title" value="Useraccount Inactive" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Login/LoginPage2.jsp" />
+	</definition>
+	
+	<definition name="loginPage3" extends="login.definition">
+		<put-attribute name="title" value="Login to Purchase" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Login/LoginPage3.jsp" />
+	</definition>
+	
+	<definition name="mApprovalHome" extends="site1.definition">
+		<put-attribute name="title" value="Manufacturer Approval Manager - Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Site_Body/MApprovalHome.jsp" />
+	</definition>
+	
+	<definition name="manufacturerRequestProcessed" extends="site1.definition">
+		<put-attribute name="title" value="Manufacturer Approval Manager - Request Processed" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Site_Body/ManufacturerRequestProcessed.jsp" />
+	</definition>
+	
+	<definition name="oProcessingHome" extends="site1.definition">
+		<put-attribute name="title" value="Order Processing Manager - Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Site_Body/OProcessingHome.jsp" />
+	</definition>
+	
+	<definition name="newManufacturerRequest" extends="site1.definition">
+		<put-attribute name="title" value="Manufacturer Approval Manager - View New Request" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Site_Body/NewMRequest.jsp" />
+	</definition>
+	
+	<definition name="newOrderRequest" extends="site1.definition">
+		<put-attribute name="title" value="Order Processing Manager - View New Request" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Site_Body/NewOrderRequest.jsp" />
+	</definition>
+	
+	<definition name="viewOrderDetails" extends="site1.definition">
+		<put-attribute name="title" value="Order Processing Manager - View Order Details" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Site_Body/ViewOrderDetails.jsp" />
+	</definition>
+	
+	<definition name="orderProcessed" extends="site1.definition">
+		<put-attribute name="title" value="Order Processing Manager - Order Processed" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Site_Body/OrderProcessed.jsp" />
+	</definition>
+	
+	<definition name="viewAllManufacturers" extends="site1.definition">
+		<put-attribute name="title" value="Manufacturer Approval Manager - View All Manufacturers" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Site_Body/ViewAllM.jsp" />
+	</definition>
+	
+	<definition name="viewManufacturerDetails" extends="site1.definition">
+		<put-attribute name="title" value="Manufacturer Approval Manager - View All Manufacturers" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Site_Body/ViewManufacturerDetails.jsp" />
+	</definition>
+	
+	<definition name="mAdminHome" extends="manufacturer.definition">
+		<put-attribute name="title" value="Manufacturer Admin - Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/MAdminHome.jsp" />
+	</definition>
+	
+	<definition name="addDepot" extends="manufacturer.definition">
+		<put-attribute name="title" value="Manufacturer Admin - Add Depot" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/AddDepot.jsp" />
+	</definition>
+	
+	<definition name="depotAdded" extends="manufacturer.definition">
+		<put-attribute name="title" value="Manufacturer Admin - Depot Added Successfully" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/DepotAdded.jsp" />
+	</definition>
+	
+	<definition name="addEmployee" extends="manufacturer.definition">
+		<put-attribute name="title" value="Manufacturer Admin - Add Employee" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/AddEmployees.jsp" />
+	</definition>
+	
+	<definition name="employeeAdded" extends="manufacturer.definition">
+		<put-attribute name="title" value="Manufacturer Admin - Employee Added Successfully" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/EmployeeAdded.jsp" />
+	</definition>
+	
+	<definition name="viewAllProducts" extends="manufacturer.definition">
+		<put-attribute name="title" value="Manufacturer Admin - View All Products" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/ViewAllProduct.jsp" />
+	</definition>
+	
+	<definition name="productManagerHome" extends="manufacturer.definition">
+		<put-attribute name="title" value="Product Manager - Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/ProductManagerHome.jsp" />
+	</definition>
+	
+	<definition name="addProduct" extends="manufacturer.definition">
+		<put-attribute name="title" value="Prodcut Manager - Add Product" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/AddProduct.jsp" />
+	</definition>
+	
+	<definition name="productAdded" extends="manufacturer.definition">
+		<put-attribute name="title" value="Prodcut Manager - Product Added Successfully" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/ProductAdded.jsp" />
+	</definition>
+	
+	<definition name="viewProduct" extends="manufacturer.definition">
+		<put-attribute name="title" value="Prodcut Manager - View Products" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/ViewProduct.jsp" />
+	</definition>
+	
+	<definition name="productDeleted" extends="manufacturer.definition">
+		<put-attribute name="title" value="Prodcut Manager - Product Deleted" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/ProductDeleted.jsp" />
+	</definition>
+	
+	<definition name="stockManagerHome" extends="manufacturer.definition">
+		<put-attribute name="title" value="Stock Manager - Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/StockManagerHome.jsp" />
+	</definition>
+	
+	<definition name="addStock" extends="manufacturer.definition">
+		<put-attribute name="title" value="Stock Manager - Add Stock" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/AddStock.jsp" />
+	</definition>
+	
+	<definition name="stockAdded" extends="manufacturer.definition">
+		<put-attribute name="title" value="Stock Manager - Stock Added" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/StockAdded.jsp" />
+	</definition>
+	
+	<definition name="depotManagerHome" extends="manufacturer.definition">
+		<put-attribute name="title" value="Depot Manager - Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/DepotManagerHome.jsp" />
+	</definition>
+	
+	<definition name="viewDepotStock" extends="manufacturer.definition">
+		<put-attribute name="title" value="Depot Manager - View Stock" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/ViewDepotStock.jsp" />
+	</definition>
+	
+	<definition name="quickOrderPlaced" extends="manufacturer.definition">
+		<put-attribute name="title" value="Depot Manager - Order Placed" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/QuickOrderPlaced.jsp" />
+	</definition>
+	
+	<definition name="viewCustomerOrders" extends="manufacturer.definition">
+		<put-attribute name="title" value="Depot Manager - View Customer Order" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/ViewCustomerOrders.jsp" />
+	</definition>
+	
+	<definition name="viewDepotOrder" extends="manufacturer.definition">
+		<put-attribute name="title" value="Stock Manager - View Order" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/ViewDepotOrder.jsp" />
+	</definition>
+	
+	<definition name="depotOrderProcessed" extends="manufacturer.definition">
+		<put-attribute name="title" value="Stock Manager - Order Processed" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/DepotOrderProcessed.jsp" />
+	</definition>
+	
+	<definition name="viewTotalStock" extends="manufacturer.definition">
+		<put-attribute name="title" value="Stock Manager - View Total Stock" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/ViewTotalStock.jsp" />
+	</definition>
+	
+	<definition name="shipped" extends="manufacturer.definition">
+		<put-attribute name="title" value="Depot Manager - Order Shipped" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/Shipped.jsp" />
+	</definition>
+	
+	<definition name="lessStock" extends="manufacturer.definition">
+		<put-attribute name="title" value="Depot Manager - Less Stock" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Manufacturer/LessStock.jsp" />
+	</definition>
+	
+	<definition name="customerHome" extends="customer.definition">
+		<put-attribute name="title" value="Customer - Home" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/home.jsp" />
+	</definition>
+	
+	<definition name="shopByManufacturer1" extends="home.definition">
+		<put-attribute name="title" value="Customer - Shop Products" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Shopping/ShopByManufacturer.jsp" />
+	</definition>
+	
+	<definition name="shopByManufacturer2" extends="customer.definition">
+		<put-attribute name="title" value="Customer - Shop Products" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Shopping/ShopByManufacturer.jsp" />
+	</definition>
+	
+	<definition name="shopByProductType1" extends="home.definition">
+		<put-attribute name="title" value="Customer - Shop Products" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Shopping/ShopByProduct.jsp" />
+	</definition>
+	
+	<definition name="shopByProductType2" extends="customer.definition">
+		<put-attribute name="title" value="Customer - Shop Products" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Shopping/ShopByProduct.jsp" />
+	</definition>
+	
+	<definition name="addToCartSuccess" extends="customer.definition">
+		<put-attribute name="title" value="Customer - Product Added Successfully" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Shopping/AddToCartSuccess.jsp" />
+	</definition>
+	
+	<definition name="myCart" extends="customer.definition">
+		<put-attribute name="title" value="Customer - My Cart" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Customer/MyCart.jsp" />
+	</definition>
+	
+	<definition name="orderPlaced" extends="customer.definition">
+		<put-attribute name="title" value="Customer - Order Placed" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Shopping/OrderPlacedSuccess.jsp" />
+	</definition>
+	
+	<definition name="myOrders" extends="customer.definition">
+		<put-attribute name="title" value="Customer - My Orders" />
+		<put-attribute name="body" value="/WEB-INF/views/Body_Files/Customer/MyOrders.jsp" />
+	</definition>
+	
+	
+</tiles-definitions>
